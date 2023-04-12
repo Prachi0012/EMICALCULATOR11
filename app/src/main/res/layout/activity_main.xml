@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FCDBDB"
+    tools:ignore="ExtraText">
+
+    //header
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFABAB"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMI CALCULATOR"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+               />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    // details
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:backgroundTint="#FFABAB"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principle Amount"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:backgroundTint="#F2E3DB"
+                android:paddingHorizontal="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/edtamt"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Principle amount"
+                    android:inputType="number"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principle Amount"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:backgroundTint="#F2E3DB"
+                android:paddingHorizontal="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/edtrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:hint="Enter Rate of Interest"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principle Amount"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+
+                android:backgroundTint="#F2E3DB"
+
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/edtyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:hint="Enter Number of Year"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="@null"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/txtcalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Calculate  "
+                android:background="#E8C4C4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    // Answers
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:backgroundTint="#FFABAB"
+        app:cardCornerRadius="@dimen/_20sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_20sdp"
+                android:backgroundTint="#F2E3DB"
+                android:layout_gravity="center"
+                android:paddingHorizontal="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Principle Amount"
+                    android:textSize="@dimen/_15ssp"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pamt"
+                        android:layout_width="334dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+
+                        android:gravity="end"
+                        android:hint="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_20sdp"
+                android:backgroundTint="#F2E3DB"
+                android:layout_gravity="center"
+                android:paddingHorizontal="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interest"
+                    android:textSize="@dimen/_15ssp"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/iamt"
+                        android:layout_width="334dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="end"
+                        android:hint="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_20sdp"
+                android:backgroundTint="#F2E3DB"
+                android:layout_gravity="center"
+                android:paddingHorizontal="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textSize="@dimen/_15ssp"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tamt"
+                        android:layout_width="334dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="end"
+                        android:hint="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
